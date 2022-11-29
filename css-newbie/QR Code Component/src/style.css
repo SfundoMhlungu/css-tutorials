@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0; 
+    margin: 0;
+    --light-gray:hsl(212, 45%, 89%);
+    --grayish-blue:hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --radius: 1.5em;
+}
+
+.container{
+    /* max-width: 1220px; */
+    background-color: var(--light-gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.QR_card{
+    background-color: white;
+    max-width: 375px;
+    margin: 2em;
+    height: max-content;
+    border-radius: var(--radius);
+
+}
+
+.QR_card img {
+    height: 40%;
+    width: 100%;
+    padding: 1em;
+    border-radius: var(--radius);
+}
+
+.QR_card section{
+    text-align: center;
+    padding: 1.5em;
+}

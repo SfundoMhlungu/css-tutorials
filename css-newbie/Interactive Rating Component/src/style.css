@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0; 
+    padding: 0;
+    
+--orange:  hsl(25, 97%, 53%);
+--white: hsl(0, 0%, 100%);
+--light-grey: hsl(217, 12%, 63%);
+--medium-grey: hsl(216, 12%, 54%);
+--dark-blue: hsl(213, 19%, 18%);
+--dark-blue-lighter: hsl(213, 19%, 22%);
+--very-darkblue: hsl(216, 12%, 8%);
+}
+
+
+
+.container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--very-darkblue);
+    padding: 1em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-blue);
+  border-radius: 1.2em;
+  max-width: 375px;
+  height: fit-content;
+  padding: 2em;
+  color: var(--white);
+}
+
+p {
+    color: var(--medium-grey);
+    margin-bottom: 0;
+}
+.icon {
+    background-color: var(--dark-blue-lighter);
+    border-radius: 50px;
+    width: max-content;
+    padding: .7em;
+}
+
+.icon img {
+    width: 28px;
+    height: 28px;
+    /* padding: 2em; */
+    
+}
+
+.rating{
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding: 1.5em 0;
+    
+}
+
+.rate {
+    padding: 1em;
+    margin-right:1.5em;
+    cursor: pointer;
+}
+
+.rate:hover{
+    background-color: var(--light-grey);
+}
+
+.selected {
+    background-color: var(--orange);
+}
+
+.hero_img{
+    display: grid;
+    place-content: center;
+    gap: 1em;
+    padding-bottom: 1em;
+
+}
+
+.btn {
+
+
+    display: inline-block;
+    /* outline: 0; */
+    /* appearance: none; */
+    padding: 15px 12px;
+    margin-bottom: .5em;
+    border: 0px solid transparent;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--orange);
+    /* box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px; */
+    color: rgb(255, 255, 255);
+    /* font-size: 14px; */
+    font-weight: 400;
+    width: 100%;
+
+    transition: all 150ms ease-in-out 0s;
+  
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   text-transform: uppercase;
+   
+}
+
+.btn:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.details{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
