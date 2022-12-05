@@ -20,7 +20,7 @@
  
 
   <div class="container">
-
+  <!-- rating card -->
     <div class="card" id="rating_card">
       <span class="icon">
         <img src="./images/icon-star.svg"/>
@@ -52,7 +52,8 @@
       </div>
 
     </div>
-
+     
+    <!-- thank you card -->
     <div class="card hidden" id="thanks">
       <div class="hero_img">
         
@@ -93,7 +94,7 @@
     let rating = 0;
     document.querySelector(".rating").addEventListener("click", (e)=> {
       const allRatings = [1, 2, 3, 4, 5]
-      // alert(allRatings.includes(+e.target.outerText))
+    
       if(allRatings.includes(+e.target.outerText)){
          
         const childs = document.querySelector(".rating").children

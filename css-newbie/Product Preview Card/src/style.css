@@ -5,10 +5,7 @@
 
 }
 
-
-body{
-    margin: 0;
-    padding: 0;
+:root{
     --dark-cyan: hsl(158, 36%, 37%);
     --dark-cyan-darker:hsl(158, 36%, 17%);
     --cream: hsl(30, 38%, 92%);
@@ -17,6 +14,12 @@ body{
     --very-dark-blue: hsl(212, 21%, 14%);
     --dark-grayish-blue: hsl(228, 12%, 48%);
     --white:  hsl(0, 0%, 100%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+  
 
     font-family: "Montserrat";
     font-weight: 500;
@@ -34,7 +37,7 @@ body{
     align-items: center;
     padding: 1em;
    
-
+  
 }
 
 .product_card{
@@ -43,22 +46,20 @@ body{
     background-color: var(--white);
     border-radius: 1.2em;
     overflow: hidden;  
-    /* make the image rounded */
-    /* padding: 2em; */
+  
 
 }
-
 
 .product_img {
     height: 10em;
-    position: relative;
+  
 }
 
 .product_img img{
-    /* position: absolute; */
+   
     width: 100%;
     height: 100%;
-    inset: 0;
+  
     object-fit:cover;
     object-position: center;
 
@@ -83,7 +84,7 @@ body{
 }
 
 .product_details p {
-    /* font-family: "Montserrat"; */
+   
      font-size:14px;
     color: var(--dark-grayish-blue);
 }
@@ -94,7 +95,7 @@ body{
     font-family: "Fraunces";
 }
 
-.product_details h1 > span {
+.product_details h1 span {
     display: flex;
     align-items: center;
     padding-left: .8em;
@@ -149,6 +150,7 @@ body{
 .show-for-mobile {
     display: block;
 }
+
 @media screen and (min-width:1024px){
     .hidden-for-desktop{
         display: none;
@@ -178,9 +180,7 @@ body{
         justify-content: center;
     }
 
-    /* .product_details p {
-     padding: 1em 0;
-    } */
+ 
 
     .product_details h2 {
       font-size: 2.3em;
