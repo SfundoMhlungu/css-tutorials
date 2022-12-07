@@ -47,7 +47,11 @@ p {
 }
 .icon {
     background-color: var(--dark-blue-lighter);
-    border-radius: 50px;
+    /* perfect circle start */
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    /* perfect circle end */
     width: max-content;
     padding: .7em;
 }
